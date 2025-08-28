@@ -1,5 +1,5 @@
 URL to test
-https://rodrigocopetti.github.io/wd4e-capstone/index.html
+https://rodrigocopetti.github.io/wd4e-cp/index.html
 
 Source code
-https://github.com/rodrigocopetti/wd4e-capstone
+https://github.com/rodrigocopetti/wd4e-cp
