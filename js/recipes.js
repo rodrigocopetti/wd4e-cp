@@ -41,7 +41,7 @@ recipes.forEach((recipe) => {
   const viewBtn = card.querySelector(".recipe-card__view-btn");
 
   mainImg.src = recipe.images[0];
-  mainImg.alt = recipe.title + " main image";
+  mainImg.alt = recipe.title;
   title.textContent = recipe.title;
 
   // Adds thumbnail images and click event to change main image
