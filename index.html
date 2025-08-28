@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YUMISTRY</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/palette.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/favorite-recipes.css">
+
+</head>
+
+<body id="home">
+  <header class="header">
+    <div class="header__container">
+      <button class="header__btn header__menu-btn" aria-label="Abrir menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="index.html" class="header__logo">
+        <img src="images/logo.png" alt="YUMISTRY Logo">
+      </a>
+      <nav class="header__nav">
+        <button class="header__close-btn" aria-label="Fechar menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul>
+          <li class="active"><a href="index.html#home">Home</a></li>
+          <li><a href="pages/recipes.html">Recipes</a></li>
+          <li><a href="pages/nutrients.html">Nutrients</a></li>
+        </ul>
+      </nav>
+      <button class="header__btn header__user-btn" aria-label="Usuário">
+        <i class="fa-solid fa-user"></i>
+      </button>
+    </div>
+  </header>
+  <main>
+    <div class="main__description">
+      <h1>Welcome to YUMISTRY</h1>
+      <p>Your one-stop solution for all your culinary needs.</p>
+    </div>
+
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="carousel__slides">
+        <div class="carousel__slide active">
+          <img src="images/carousel/img1.jpg" alt="Delicious Dish 1">
+          <div class="carousel__caption">
+            <h2>Discover New Flavors</h2>
+            <p>Explore unique recipes from around the world.</p>
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <img src="images/carousel/img2.jpg" alt="Delicious Dish 2">
+          <div class="carousel__caption">
+            <h2>Fresh Nutrients</h2>
+            <p>Find the best nutrients for your next meal.</p>
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <img src="images/carousel/img3.jpg" alt="Delicious Dish 3">
+          <div class="carousel__caption">
+            <h2>Easy to Cook</h2>
+            <p>Step-by-step guides for every skill level.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel__control carousel__control--prev" aria-label="Previous slide">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="carousel__control carousel__control--next" aria-label="Next slide">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <div class="carousel__indicators">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div> 
+
+    <!-- Favorite Recipes of the Month -->
+    <section class="favorite-recipes">
+      <h2>Favorite Recipes of the Month</h2>
+      <div class="favorite-recipes__cards">
+        <a href="pages/recipes/roast_pork_loin.html" class="favorite-recipes__card">
+          <img src="images/roast_pork_loin/img1.jpg" alt="Roast Pork Loin">
+          <span>Roast Pork Loin</span>
+        </a>
+        <a href="pages/recipes/shrimp_with_garlic_and_oil.html" class="favorite-recipes__card">
+          <img src="images/shrimp_with_garlic_and_oil/img1.jpg" alt="Shrimp with garlic and oil">
+          <span>Shrimp with garlic and oil</span>
+        </a>
+        <a href="pages/recipes/tomatoes_stuffed_with_ricotta.html" class="favorite-recipes__card">
+          <img src="images/tomatoes_stuffed_with_ricotta/img1.jpg" alt="Tomatoes stuffed with seasoned ricotta cream">
+          <span>Tomatoes stuffed with seasoned ricotta cream</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2025 YUMISTRY. All rights reserved.</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+
+</html>

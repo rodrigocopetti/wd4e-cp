@@ -1,0 +1,248 @@
+/* Base body styles for layout and font */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* Main content area */
+main {
+  flex: 1;
+  padding: 3rem;
+}
+
+/* Footer styling */
+footer {
+  background: var(--color-white);
+  color: var(--color-black-01);
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 -2px 8px var(--color-grey-light);
+}
+
+/* Main heading styles */
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-brown_01);
+  margin-bottom: 1rem;
+}
+
+/* Header layout container */
+.header {
+  width: 100%;
+  background: var(--color-white);
+  color: var(--color-black-01);
+  box-shadow: 0 2px 8px var(--color-grey-light);
+}
+
+/* Header inner container for logo and navigation */
+.header__container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0.5rem 0.5rem;
+  position: relative;
+}
+
+/* Logo container in header */
+.header__logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Logo image styling */
+.header__logo img {
+  height: 3rem;
+}
+
+/* Navigation menu container (mobile default) */
+.header__nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 85vw;
+  max-width: 15rem;
+  background: var(--color-white, #fff); /* fallback for missing variable */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+/* Navigation list styling */
+.header__nav ul {
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+/* Navigation link styling */
+.header__nav a {
+  display: block;
+  padding: 1rem;
+  color: var(--color-blue-dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+/* Navigation item hover background */
+.header__nav li:hover {
+  background: var(--color-blue-light);
+}
+
+/* Navigation link hover color */
+.header__nav a:hover {
+  color: var(--color-white);
+}
+
+/* Active navigation item background */
+.header__nav li.active {
+  background-color: var(--color-orange);
+}
+
+/* Active navigation link color */
+.header__nav li.active a {
+  color: var(--color-black);
+}
+
+/* Show navigation when active (mobile) */
+.header__nav.active {
+  display: block;
+}
+
+/* Header menu button styling */
+.header__btn {
+  background: transparent;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header menu button hover effect */
+.header__btn:hover {
+  background: var(--color-blue-light);
+  outline: none;
+}
+
+/* Icon inside header menu button */
+.header__btn i {
+  font-size: 1.25rem;
+  color: var(--color-blue);
+  transition: color 0.2s;
+}
+
+/* Icon color on header menu button hover */
+.header__btn:hover i {
+  color: var(--color-blue-dark);
+}
+
+/* User button in header */
+.header__user-btn {
+  margin-left: auto;
+}
+
+/* Close button for mobile navigation */
+.header__close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 20;
+  background-color: transparent;
+  border: none;
+}
+
+/* Icon inside close button */
+.header__close-btn i {
+  font-size: 1.25rem;
+  color: var(--color-blue-light);
+  transition: color 0.2s;
+}
+
+/* Icon color on close button hover */
+.header__close-btn:hover i {
+  color: var(--color-blue-dark);
+}
+
+/* Main description section */
+.main__description {
+  margin-bottom: 2rem;
+}
+
+/* Responsive styles for tablets */
+@media (min-width: 768px) {
+  /* Increase base font size */
+  body {
+    font-size: 18px;
+  }
+
+  /* Larger heading */
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* Logo alignment for desktop */
+  .header__logo {
+    flex: 0;
+    margin-right: 2rem;
+  }
+
+  /* Larger logo image */
+  .header__logo img {
+    height: 48px;
+  }
+
+  /* Navigation menu always visible on desktop */
+  .header__nav {
+    display: block !important;
+    position: static;
+    width: auto;
+    max-width: none;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  /* Navigation list horizontal layout */
+  .header__nav ul {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0;
+    padding: 0;
+    flex-direction: row;
+  }
+
+  /* Navigation item rounded corners */
+  .header__nav li {
+    border-radius: 6px;
+  }
+
+  /* Hide menu and close buttons on desktop */
+  .header__menu-btn {
+    display: none !important;
+  }
+
+  .header__close-btn {
+    display: none !important;
+  }
+}
+
+/* Responsive styles for desktop */
+@media (min-width: 992px) {
+
+}
+
+/* Responsive styles for large desktop */
+@media (min-width: 1200px) {
+  
+}

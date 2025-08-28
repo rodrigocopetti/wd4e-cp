@@ -1,0 +1,108 @@
+/* Container for the ingredients section */
+.recipe-ingredients {
+  margin: 2em 0;
+}
+
+/* Ingredients section title */
+.recipe-ingredients h2 {
+  font-size: 1.35em;
+  color: var(--color-brown_01);
+  margin-bottom: 1em;
+}
+
+/* Ingredients list grid layout */
+.recipe-ingredients ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.2em;
+}
+
+/* Individual ingredient item styling */
+.recipe-ingredients li {
+  display: flex;
+  align-items: center;
+  background: var(--color-cream);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px var(--color-black-shadow-05);
+  padding: 1em;
+}
+
+/* Ingredient image styling */
+.recipe-ingredients img {
+  width: 60px;
+  height: 60px;
+  margin-right: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--color-thumb-shadow);
+  object-fit: cover;
+}
+
+/* Ingredient text styling */
+.recipe-ingredients span {
+  font-size: 1.08em;
+}
+
+/* Main recipe image styling */
+.recipe-main-img__img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* Container for recipe description section */
+.recipe-description {
+  margin: 1.5em 0;
+}
+
+/* Recipe description text styling */
+.recipe-description__text {
+  text-align: justify;
+  font-size: 1.15em;
+  line-height: 1.7;
+  color: var(--color-grey-dark);
+  background: var(--color-cream-light);
+  padding: 1.5em 2em;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--color-black-shadow-05);
+}
+
+/* Highlighted text in recipe description */
+.recipe-description__highlight {
+  color: var(--color-brown_01);
+  font-weight: 500;
+}
+
+/* Responsive: center and stretch main image for screens >= 768px */
+@media (min-width: 768px) {
+  .recipe-main-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25rem;
+  }
+  .recipe-main-img__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+}
+
+/* Back link styling */
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: var(--color-blue-dark, #b85c38);
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 1.08em;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+/* Back link hover effect */
+.back-link:hover {
+  color: var(--color-blue, #8c3c1a);
+}
