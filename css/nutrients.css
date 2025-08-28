@@ -48,7 +48,7 @@
   font-size: 1.08em;
   color: var(--color-grey-dark);
   line-height: 1.6;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 /* Responsive: keep single column on tablets */
