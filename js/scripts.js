@@ -1,3 +1,13 @@
+// document.addEventListener('DOMContentLoaded', function() {
+//   const signupBtn = document.getElementById('signupBtn');
+//   if (signupBtn) {
+//     signupBtn.addEventListener('click', function() {
+//       window.location.href = 'pages/auth/signup.html';
+//     });
+//   }
+// });
+
+
 // Toggles the navigation menu when the menu button is clicked
 document.querySelector('.header__menu-btn').addEventListener('click', function() {
   // Handles menu button click to show/hide navigation
@@ -23,4 +33,6 @@ if (backLink) {
     backLink.textContent = '← Back to Recipes';
   }
 }
+
+
 

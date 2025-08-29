@@ -40,8 +40,13 @@
           <li><a href="../nutrients.html">Nutrients</a></li>
         </ul>
       </nav>
-      <button class="header__btn header__user-btn" aria-label="Usuário">
-        <i class="fa-solid fa-user"></i>
+      <button class="header__btn--flat header__btn--signin" aria-label="Sign in"
+        onclick="window.location.href='../auth/signin.html'">
+        <span>Sign in</span>
+      </button>
+      <button id="signupBtn" class="header__btn--outline header__btn--signup" aria-label="Sign up"
+        onclick="window.location.href='../auth/signup.html'">
+        <span>Sign up</span>
       </button>
     </div>
   </header>

@@ -1,0 +1,76 @@
+/* Signup Page Styles */
+
+.main__signups-header {
+  background: url('../../images/signup_bg.jpg') center center/cover no-repeat;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  margin-bottom: 2rem;
+}
+
+.main__signups-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.main__signups-header span {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.main__signups-form {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 2rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.signup-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: #f9f9f9;
+  transition: border-color 0.2s;
+}
+
+.signup-form input:focus {
+  border-color: #ff9800;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #e68900;
+}

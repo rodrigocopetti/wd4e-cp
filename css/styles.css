@@ -68,9 +68,11 @@ h1 {
   left: 0;
   width: 85vw;
   max-width: 15rem;
-  background: var(--color-white, #fff); /* fallback for missing variable */
+  background: var(--color-white, #fff);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   z-index: 10;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /* Navigation list styling */
@@ -179,6 +181,70 @@ h1 {
   margin-bottom: 2rem;
 }
 
+/* Outline button style in header */
+.header__btn--outline {
+  background: transparent;
+  border: 2px solid var(--color-blue);
+  color: var(--color-blue);
+  border-radius: 6px;
+  padding: 0.5rem 0.5rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.header__btn--outline:hover {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+.header__btn--flat {
+  background: transparent;
+  /* border: 2px solid var(--color-blue); */
+  border: none;
+  color: var(--color-blue);
+  border-radius: 6px;
+  padding: 0.5rem 0.5rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.header__btn--flat:hover {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+.header__btn--signin {
+  display: inline-flex;
+  margin-left: auto;
+  align-self: center;
+  vertical-align: middle;
+}
+
+/* Esconde o botão em mobile */
+.header__btn--signup {
+  display: none;
+}
+
+/* Mostra e alinha o botão à direita no nav quando >= 768px */
+@media (min-width: 768px) {
+  .header__btn--signup {
+    display: inline-flex;
+    align-self: center;
+    vertical-align: middle;
+  }
+  /* .header__nav {
+    display: flex !important;
+    align-items: center;
+  }
+  .header__nav ul {
+    flex: 1;
+  } */
+}
+
 /* Responsive styles for tablets */
 @media (min-width: 768px) {
   /* Increase base font size */
@@ -239,10 +305,8 @@ h1 {
 
 /* Responsive styles for desktop */
 @media (min-width: 992px) {
-
 }
 
 /* Responsive styles for large desktop */
 @media (min-width: 1200px) {
-  
 }
